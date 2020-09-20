@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing:border-box;
 }
 
 .main-header{
@@ -43,5 +44,5 @@ a:active{
 .content{
     background:url("ab.png");
     width: 100%;
-    height: 600px;
+    height: 698px;
 }
