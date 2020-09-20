@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+
+.main-header{
+    width: 100%;
+    background-color: black; 
+    color: aliceblue;
+    padding: 10px 16px;
+}
+.logo {
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+   font-size: 25px;
+    font-family:'Montserrat';
+    vertical-align: middle;
+}
+.main-nav{
+    display: inline-block;
+    list-style: none;
+    text-align: right;
+    width: calc(100% - 65px );
+    vertical-align: middle;
+}
+.nav-item{
+    display: inline-block;
+    margin: 0 16px;
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 3px 0px;
+}
+a:hover{
+    color: gray;
+    border-bottom: 2px solid grey;
+}
+a:active{
+    color: aqua;
+}
+.content{
+    background:url("ab.png");
+    width: 100%;
+    height: 600px;
+}
