@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    border: 3px solid whitesmoke;
+    padding: 40px 80px;
+    font-size: 28px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+a::before{
+    content: 'Great!!';
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 42, 49);
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+a:hover::before{
+    transform: translate(0);
+    
+}
