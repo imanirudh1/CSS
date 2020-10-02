@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato',sans-serif;
+    background: linear-gradient(to right, #c33764, #1d2671);
+}
+  .container{
+     height: 400px;
+     width: 500px;
+     position: relative;
+     overflow: hidden;
+  }
+  img{
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s;
+  }
+  .caption{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top:0;
+      left: 0;
+      color: aliceblue;
+      background:black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: all 0.5s;
+      transform: translateY(-100%);
+      
+  }
+  p{
+      padding: 20px 40px;
+      text-align: center;
+  }
+  .container:hover .caption{
+      background:black;
+      
+      transform: translateY(0);
+  }
+  .container:hover img{
+      transform: translateY(100%)
+  }
