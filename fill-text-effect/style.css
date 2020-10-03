@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: rgb(15, 108, 247);
+    font-size: 100px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+h1:before{
+    content: 'HELLO';
+    color: black;
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    transition: all 1s;
+}
+h1:hover::before{
+    width: 100%;
+}
