@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #c31432, #240b36); 
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: 20px;
+  color: #d87a7a;
+  line-height: 90px;
+  text-shadow: 0 1px 0 #964242,0 2px 0 #964242,0 3px 0 #964242,0 4px 0#964242, 0 30px 5px rgba(0, 0, 0, 0.2);
+  animation: head 3s linear alternate infinite;
+}
+ @keyframes head{
+     from {
+         transform: rotate(5deg);
+     }
+     to{
+         transform: rotate(-5deg);
+     }
+ }
