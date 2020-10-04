@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #0575e6, #021b79);
+  perspective: 200px;
+}
+h1 {
+    position: sticky;
+  font-size: 50px;
+  color: aliceblue;
+  letter-spacing: 8px;
+}
+span::before {
+  content: "";
+  font-family: Arial, Helvetica, sans-serif;
+  color: aqua;
+  text-transform: uppercase;
+  animation: rotator 8s infinite ease-out;
+
+}
+
+@keyframes rotator{
+    0%{
+        opacity: 1;
+        content: 'Transition';
+       
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        content: 'transforms';
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        content: "Animation";
+        
+    }
+}
