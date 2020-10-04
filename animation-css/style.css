@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+div{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    animation:moving 3s alternate both infinite ease ;
+}
+@keyframes moving{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translate(500px,500px);
+    }
+}
