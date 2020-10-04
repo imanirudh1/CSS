@@ -1,0 +1,195 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+.icon{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:0 5px 15px -5px #00000070;
+    color: aliceblue;
+    overflow: hidden;
+}
+.icon:before{
+    content: '';
+    height: 120%;
+    width: 120%;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.icon i{
+font-size: 25px;
+line-height: 90px;
+transition: all 0.3s;
+}
+
+.icon:hover i{
+    transform: scale(1.3);
+    
+}
+.icon:hover:before{
+    top: -10%;
+    left: -10%;
+}
+.icon-youtube{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:0 5px 15px -5px #00000070;
+    color: aliceblue;
+    overflow: hidden;
+}
+.icon-youtube:before{
+    content: '';
+    height: 120%;
+    width: 120%;
+     background: linear-gradient(to right, #e52d27, #b31217);
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.icon-youtube i{
+font-size: 25px;
+line-height: 90px;
+transition: all 0.3s;
+}
+
+.icon-youtube:hover i{
+    transform: scale(1.3);
+    
+}
+.icon-youtube:hover:before{
+    top: -10%;
+    left: -10%;
+}
+
+
+.icon-facebook{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:0 5px 15px -5px #00000070;
+    color: aliceblue;
+    overflow: hidden;
+}
+.icon-facebook:before{
+    content: '';
+    height: 120%;
+    width: 120%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.icon-facebook i{
+font-size: 25px;
+line-height: 90px;
+transition: all 0.3s;
+}
+
+.icon-facebook:hover i{
+    transform: scale(1.3);
+    
+}
+.icon-facebook:hover:before{
+    top: -10%;
+    left: -10%;
+}
+
+.icon-google{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:0 5px 15px -5px #00000070;
+    color: aliceblue;
+    overflow: hidden;
+}
+.icon-google:before{
+    content: '';
+    height: 120%;
+    width: 120%;
+    background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.icon-google i{
+font-size: 25px;
+line-height: 90px;
+transition: all 0.3s;
+}
+
+.icon-google:hover i{
+    transform: scale(1.3);
+    
+}
+.icon-google:hover:before{
+    top: -10%;
+    left: -10%;
+}
+
+.icon-insta{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(53, 53, 53);
+    position: relative;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow:0 5px 15px -5px #00000070;
+    color: aliceblue;
+    overflow: hidden;
+}
+.icon-insta:before{
+    content: '';
+    height: 120%;
+    width: 120%;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    position: absolute;
+    top: 90%;
+    left: -110%;
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+.icon-insta i{
+font-size: 25px;
+line-height: 90px;
+transition: all 0.3s;
+}
+
+.icon-insta:hover i{
+    transform: scale(1.3);
+    
+}
+.icon-insta:hover:before{
+    top: -10%;
+    left: -10%;
+}
