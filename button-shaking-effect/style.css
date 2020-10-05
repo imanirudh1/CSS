@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; height: 100vh;
+    background-color: rgb(39, 39, 39);
+}
+a{
+    border: 3px solid white;
+    font-size: 28px;
+    padding: 40px 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 5px;
+   transition: all 0.5s;
+}
+a:hover{
+    color: red;
+    animation: shake 0.5s linear 1 ; 
+    border-color: red;
+}
+@keyframes shake{
+0%{
+    transform: rotate(0);
+}
+20%{
+    transform: rotate(5deg);
+}
+50%{
+    transform: rotate(-10deg);
+}
+75%{
+    transform:rotate(10deg)
+}
+100%{
+    transform: rotate(0);
+}
+/* 33%{
+    transform: rotate(10deg);
+}
+66%{
+    transform: rotate(-10deg);
+}
+100%{
+    transform: rotate(10deg);
+} */
+
+}
