@@ -1,0 +1,17 @@
+{
+  "name": "travel-website",
+  "version": "1.0.0",
+  "description": "Travel Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anirudh",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
