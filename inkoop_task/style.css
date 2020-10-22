@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .header {
+    background-color: #293e51;
+    height: 350px;
+    padding: 0 20%;
+    position: relative;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar {
+    padding-top: 30px;
+  }
+  
+  .nav-bar h5 {
+    color: #648780;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    justify-content: s;
+    list-style: none;
+  }
+  .nav-bar ul li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+    color: #d5dade;
+    margin: 8px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .nav-bar ul li a::before {
+    content: '';
+    border-top: 3px solid #648780;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+  }
+  .nav-bar ul li a:hover:before {
+    transform: scaleX(1);
+  }
+  .nav-bar ul li a::after {
+    content: '';
+    border-bottom: 3px solid #648780;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: right;
+  }
+  .nav-bar ul li a:hover:after {
+    transform: scaleX(1);
+  }
+  
+  .header-logo {
+    color: #d5dade;
+    text-transform: uppercase;
+  
+    font-size: 30px;
+    border-top: 3px solid #648780;
+    padding-top: 20px;
+    line-height: 30px;
+  }
+  .header-title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 45vw;
+  
+    padding-bottom: 30px;
+  }
+  .header-title h2 {
+    color: #648780;
+  }
+  .header-title p {
+    margin-bottom: 35px;
+    color: #d5dade;
+    line-height: 30px;
+  }
+  .btn {
+    text-decoration: none;
+    font-size: 12px;
+    color: #d5dade;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 1px solid #d5dade;
+    position: relative;
+  }
+  .btn:hover {
+    transform: rotate(45deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .content {
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 80%;
+    padding: 20px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .card img {
+    height: 130px;
+    border-radius: 5px;
+    margin: 15px 0px;
+  }
+  .card {
+    margin: 0 10px;
+  }
+  .name {
+    color: #aab2b9;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .name-title {
+    color: #0b7059;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-weight: bold;
+  }
+  .card p {
+    color: #9b9b9b;
+    font-size: 12px;
+  
+    font-weight: bold;
+  }
+  .footer {
+    background-color: #293e51;
+    height: 60px;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer h6 {
+    color: #648780;
+    font-weight: bold;
+  }
+  .footer ul {
+    list-style: none;
+    display: flex;
+    color: #bfc2c5;
+    text-transform: capitalize;
+    font-size: 10px;
+  }
+  .footer ul li {
+    margin-right: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @media all and (max-width: 770px) {
+    .header {
+      height: 65vh;
+    }
+   
+  }
+  @media all and (max-width: 650px) {
+    .content {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      padding: 20px 200px;
+      text-align: center;
+    }
+    .card img {
+      height: 200px;
+      
+      border-radius: 5px;
+      margin: 10px 0px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  @media all and (max-width: 370px) {
+    .header {
+      height: 100vh;
+    }
+    .btn {
+    text-decoration: none;
+    font-size: 10px;
+    color: #d5dade;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border: 2px solid #d5dade;
+    position: relative;
+  }
+    .nav-bar ul {
+    display: flex;
+      flex-direction:column;
+    justify-content: s;
+    list-style: none;
+  }
+   
+  }
