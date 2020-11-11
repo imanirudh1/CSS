@@ -58,3 +58,23 @@ a {
   border-radius: 100px;
   text-transform: uppercase;
 }
+
+.row{
+  display: flex;
+  padding: 30px 0;
+}
+.section-two{
+  
+  background-color: #23424a;
+}
+.col{
+  width: 100%;
+  text-align: center;
+ 
+}
+.col + .col{
+  margin-left: 30px;
+}
+h2{
+  margin-bottom: 15px;
+}
