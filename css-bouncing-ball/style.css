@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+}
+.bouncer {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.bouncer div {
+  display: flex;
+  background-color: rgb(103, 15, 161);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  animation: bounce 0.5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+.bouncer div:nth-child(2) {
+  animation-delay: 0.1s;
+  opacity: 0.8;
+}
+.bouncer div:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.6;
+
+}
+.bouncer div:nth-child(4) {
+  animation-delay: 0.3s;
+  opacity: 0.4;
+
+}
+
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
